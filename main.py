@@ -25,6 +25,7 @@ def update_item(item_id: int, item: Item):
 def read_show(shoe_id: int, q: Optional[str] = None):
     return {"shoe_id": shoe_id, "q": q}
 
+
 @app.put("/shoes/{shoe_id}")
 def update_item(shoe_id: int, shoe: Shoe):
     return {
